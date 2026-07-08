@@ -9,26 +9,30 @@
 
 <br />
 
-> **Your intelligent, offline-first command center for orchestrating cultural events, competitions, and college fests.**
+> **A free, open-source tool for teachers and uni students in Kerala to easily manage School Youth Festivals, Kalolsavams, and College Arts Fests.**
+> 
+> *സ്കൂൾ കലോത്സവങ്ങളും മറ്റ് മത്സരങ്ങളും എളുപ്പത്തിൽ നടത്താൻ അധ്യാപകർക്കായുള്ള ഒരു സൗജന്യ സോഫ്റ്റ്‌വെയർ.*
 
-Rangoli is a fully offline-first, client-side web application designed to simplify the complex logistics of managing college fests, cultural events, and massive multi-venue competitions. Built with cutting-edge web technologies, it provides a seamless interface for master data management, schedule building, participant registration, and automated PDF report generation.
+Rangoli is a simple, offline-first web application designed to eliminate the headache of using paper and Excel sheets for managing cultural events. 
 
-🤖 **Agentic Engineering Origin**: Rangoli was proudly co-developed and iterated entirely through advanced Agentic AI engineering. By combining clear human product vision with autonomous AI coding capabilities, Rangoli showcases the future of rapid, high-quality software development.
+*A personal note: I built this project as a way of giving back to the amazing teachers I had growing up, and to all the hardworking teachers across Kerala who spend sleepless nights organizing these massive cultural festivals for their students. Thank you for everything you do! (എല്ലാ അധ്യാപകർക്കും എന്റെ ഹൃദയം നിറഞ്ഞ നന്ദി!)*
 
 ## ✨ Features
 
-- 📱 **Offline-First Architecture**: Your data lives safely in your browser using IndexedDB. No server required.
-- 🎨 **Premium UI/UX**: Stunning glassmorphism design, responsive layouts, and fluid micro-animations powered by Tailwind CSS and Radix UI.
-- 📅 **Smart Schedule Builder**: An interactive timeline interface to map out your events across multiple venues and days without conflicts. Includes support for customizable breaks.
-- 📊 **Robust Reporting**: Generate and print beautiful, categorized PDF reports (Day-wise, Venue-wise, Participant lists) natively from the browser.
-- 💾 **Native File System Sync**: Automatically prompts you to save changes securely to your local machine using the modern File System Access API.
+- 📱 **100% Offline & Private**: All data is saved directly to your own browser. No internet required after loading, and no student data is ever sent to any server.
+- 📅 **Visual Time-Tables**: An interactive timeline interface to map out your events across multiple stages and days without overlapping.
+- 🧑‍🎓 **Participant Management**: Easily manage lists of students and assign them to their respective events.
+- 📊 **Print-Ready Reports**: Generate and print neat PDF schedules (Day-wise, Stage-wise) and Participant checklists natively from the browser.
+- 💾 **Easy Backups**: Automatically prompts you to save changes securely to a file on your computer so you never lose progress.
 - ⚡ **Zero Setup**: Hosted entirely on GitHub Pages. Open the URL and start managing your event instantly.
 
 ## 🚀 Quick Start
 
-No installation is needed to use Rangoli! Simply visit the live deployment:
+**You DO NOT need to download or clone this repository to use Rangoli!** It runs entirely in your web browser. 
 
-🔗 **[Launch Rangoli](https://sivadasrajan.github.io/rangoli/)**
+Simply visit the live link below to start using it immediately:
+
+🔗 **[Launch Rangoli App](https://sivadasrajan.github.io/rangoli/)**
 
 *If you're visiting for the first time, you will be prompted to initialize your competition or import a previous JSON backup.*
 

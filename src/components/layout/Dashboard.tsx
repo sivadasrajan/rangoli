@@ -1,9 +1,10 @@
 import { useAppStore } from '@/store';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Users, CalendarDays, MapPin, Trophy, Download, CheckCircle2 } from 'lucide-react';
+import { Users, CalendarDays, MapPin, Trophy, Download, CheckCircle2, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
+import { GuideDialog } from '@/components/layout/GuideDialog';
 
 declare global {
   interface Window {
@@ -22,7 +23,7 @@ export function Dashboard({ onNavigate }: { onNavigate?: (tab: any) => void }) {
     try {
       if (!window.rangoliFileHandle) {
         window.rangoliFileHandle = await (window as any).showSaveFilePicker({
-          suggestedName: `rangoli-backup-${competition.name.replace(/\\s+/g, '-').toLowerCase()}-${competition.year}.json`,
+          suggestedName: `rangoli-backup-${competition.name.replace(/\s+/g, '-').toLowerCase()}-${competition.year}.json`,
           types: [{ description: 'JSON Files', accept: { 'application/json': ['.json'] } }],
         });
       }
@@ -51,8 +52,8 @@ export function Dashboard({ onNavigate }: { onNavigate?: (tab: any) => void }) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
         
         <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-8">
-          <div className="space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-white text-sm font-medium mb-2">
+          <div className="space-y-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-white text-sm font-medium mb-1">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
@@ -65,6 +66,14 @@ export function Dashboard({ onNavigate }: { onNavigate?: (tab: any) => void }) {
             <p className="text-indigo-100/80 text-lg md:text-xl max-w-2xl font-light">
               Your intelligent, offline-first command center for cultural event management.
             </p>
+            
+            <div className="pt-4">
+              <GuideDialog>
+                <Button className="bg-white hover:bg-slate-100 text-indigo-900 font-bold shadow-xl shadow-indigo-900/30 transition-all rounded-xl h-12 px-6 text-base hover:scale-105 duration-200">
+                  <BookOpen className="mr-2 h-5 w-5 text-indigo-600" /> How to use / ഉപയോഗിക്കേണ്ട വിധം
+                </Button>
+              </GuideDialog>
+            </div>
           </div>
 
           <div className="flex-shrink-0 flex flex-col gap-3">
