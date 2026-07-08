@@ -9,9 +9,9 @@
 
 <br />
 
-> **A free, open-source tool for teachers and uni students in Kerala to easily manage School Youth Festivals, Kalolsavams, and College Arts Fests.**
-> 
-> *സ്കൂൾ കലോത്സവങ്ങളും മറ്റ് മത്സരങ്ങളും എളുപ്പത്തിൽ നടത്താൻ അധ്യാപകർക്കായുള്ള ഒരു സൗജന്യ സോഫ്റ്റ്‌വെയർ.*
+A free, **vibecoded**, open-source tool for teachers and uni students to easily manage School Youth Festivals, Kalolsavams, and College Arts Fests.**
+ 
+സ്കൂൾ യുവജനോത്സവങ്ങൾ, കലോൽസവങ്ങൾ, കോളേജ് കലാമേളകൾ എന്നിവയുടെ ഷെഡ്യൂളുകൾ  എളുപ്പത്തിൽ നിർമിക്കാനും, കൈകാര്യം ചെയ്യുന്നതിനുമായി അധ്യാപകർക്കും സർവകലാശാല വിദ്യാർത്ഥികൾക്കും വേണ്ടി  ഒരു സൗജന്യ, ഓഫ്‌ലൈൻ, **വൈബ്കോഡ്**, ഓപ്പൺ സോഴ്‌സ് ടൂൾ .
 
 Rangoli is a simple, offline-first web application designed to eliminate the headache of using paper and Excel sheets for managing cultural events. 
 

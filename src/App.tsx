@@ -74,9 +74,10 @@ function InitDialog() {
               <span className="text-2xl text-slate-600 mt-2 block font-medium">പേപ്പർ ടൈംടേബിളുകളോട് വിട പറയാം.</span>
             </h2>
             <p className="text-lg text-slate-600 font-medium leading-relaxed max-w-md">
-              A free, simple tool built to help teachers manage School Youth Festivals, Kalolsavams, and College Arts Fests without the headache of Excel sheets.
+              A free, simple web app built to help teachers and uni students manage School Youth Festivals, Kalolsavams, and College Arts Fests without the headache of Excel sheets.
+
               <br/><br/>
-              <span className="text-base text-slate-500 font-normal">സ്കൂൾ കലോത്സവങ്ങളും മറ്റ് മത്സരങ്ങളും എളുപ്പത്തിൽ നടത്താൻ അധ്യാപകർക്കായുള്ള ഒരു സൗജന്യ സോഫ്റ്റ്‌വെയർ.</span>
+              <span className="text-base text-slate-500 font-normal">എക്സൽ ഷീറ്റുകളുടെ തലവേദനയില്ലാതെ സ്കൂൾ യുവജനോത്സവങ്ങൾ, കലോൽസവങ്ങൾ, കോളേജ് ആർട്സ് ഫെസ്റ്റിവുകൾ എന്നിവ കൈകാര്യം ചെയ്യാൻ അധ്യാപകരെയും യൂണിവേഴ്സിറ്റി വിദ്യാർത്ഥികളെയും സഹായിക്കുന്നതിനായി നിർമ്മിച്ച ഒരു സൗജന്യവും ലളിതവുമായ വെബ് ആപ്പ്.</span>
             </p>
           </div>
 
