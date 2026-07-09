@@ -175,8 +175,9 @@ function InitDialog() {
                   <Upload className="h-4 w-4 mr-2" /> Import Backup
                 </Button>
                 <GuideDialog>
-                  <Button variant="secondary" className="w-full text-indigo-700 bg-indigo-50 hover:bg-indigo-100 font-bold h-11 shadow-sm border border-indigo-100 text-sm">
-                    <BookOpen className="h-4 w-4 mr-2 text-indigo-600" /> How to use / ഉപയോഗിക്കേണ്ട വിധം
+                  <Button variant="secondary" className="w-full text-indigo-700 bg-indigo-50 hover:bg-indigo-100 font-bold h-auto py-2.5 shadow-sm border border-indigo-100 flex-wrap justify-center text-left">
+                    <BookOpen className="h-4 w-4 mr-2 text-indigo-600 shrink-0" /> 
+                    <span className="text-xs sm:text-sm">How to use / ഉപയോഗിക്കേണ്ട വിധം</span>
                   </Button>
                 </GuideDialog>
               </div>

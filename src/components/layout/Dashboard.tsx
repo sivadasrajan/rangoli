@@ -69,8 +69,9 @@ export function Dashboard({ onNavigate }: { onNavigate?: (tab: any) => void }) {
             
             <div className="pt-4">
               <GuideDialog>
-                <Button className="bg-white hover:bg-slate-100 text-indigo-900 font-bold shadow-xl shadow-indigo-900/30 transition-all rounded-xl h-12 px-6 text-base hover:scale-105 duration-200">
-                  <BookOpen className="mr-2 h-5 w-5 text-indigo-600" /> How to use / ഉപയോഗിക്കേണ്ട വിധം
+                <Button className="bg-white hover:bg-slate-100 text-indigo-900 font-bold shadow-xl shadow-indigo-900/30 transition-all rounded-xl h-auto py-3 px-4 md:px-6 text-sm md:text-base hover:scale-105 duration-200 flex-wrap md:flex-nowrap w-full md:w-auto justify-start md:justify-center">
+                  <BookOpen className="mr-2 h-5 w-5 text-indigo-600 shrink-0" /> 
+                  <span className="text-left text-xs sm:text-sm md:text-base">How to use / ഉപയോഗിക്കേണ്ട വിധം</span>
                 </Button>
               </GuideDialog>
             </div>

@@ -1,6 +1,7 @@
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger, DialogClose, DialogFooter } from '@/components/ui/dialog';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, ChevronLeft } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import type { ReactNode } from 'react';
 
 export function GuideDialog({ children }: { children: ReactNode }) {
@@ -9,18 +10,20 @@ export function GuideDialog({ children }: { children: ReactNode }) {
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
-      <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-hidden !z-[200]">
-        <DialogHeader className="px-8 py-5 border-b bg-slate-50 sticky top-0 z-10">
-          <DialogTitle className="text-3xl font-bold flex items-center gap-2 text-slate-800">
-            <BookOpen className="h-7 w-7 text-primary" />
-            How to use Rangoli
-          </DialogTitle>
-          <DialogDescription className="text-slate-600 font-medium text-base mt-1">
-            എങ്ങനെയാണ് ഈ സോഫ്റ്റ്‌വെയർ ഉപയോഗിക്കേണ്ടത് എന്നതിനെക്കുറിച്ചുള്ള ലഘുവിവരണം.
-          </DialogDescription>
+      <DialogContent showCloseButton={false} className="max-w-4xl sm:max-w-4xl md:max-w-4xl lg:max-w-4xl w-[95vw] max-h-[90vh] h-[90vh] p-0 overflow-hidden flex flex-col !z-[200]">
+        <DialogHeader className="px-4 md:px-8 py-4 border-b bg-slate-50 shrink-0 flex flex-row justify-between items-center gap-2">
+          <div className="space-y-1 text-left">
+            <DialogTitle className="text-xl md:text-3xl font-bold flex items-center gap-2 text-slate-800">
+              <BookOpen className="h-5 w-5 md:h-7 md:w-7 text-primary shrink-0" />
+              How to use
+            </DialogTitle>
+            <DialogDescription className="text-slate-600 font-medium text-xs md:text-base">
+              എങ്ങനെ ഉപയോഗിക്കണം.
+            </DialogDescription>
+          </div>
         </DialogHeader>
         
-        <ScrollArea className="p-8 h-[75vh]">
+        <ScrollArea className="flex-1 p-5 md:p-8 overflow-y-auto min-h-0">
           <div className="space-y-10 pr-6 pb-6">
             
             <section className="space-y-4">
@@ -95,6 +98,14 @@ export function GuideDialog({ children }: { children: ReactNode }) {
 
           </div>
         </ScrollArea>
+
+        <DialogFooter className="px-6 py-4 border-t bg-slate-100 sm:justify-start">
+          <DialogClose asChild>
+            <Button variant="outline" className="w-full sm:w-auto font-bold border-slate-300 text-slate-700 bg-white hover:bg-slate-50 h-11 text-base shadow-sm">
+              <ChevronLeft className="mr-2 h-5 w-5" /> Back / തിരികെ പോകുക
+            </Button>
+          </DialogClose>
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   );
